@@ -220,6 +220,14 @@ p#first
     
 
   }
+  .sidebar
+  {
+    display: none;
+  }
+  .openbtn
+  {
+    display: none;
+  }
   
   @media only screen and (max-width: 480px)
   {
@@ -247,63 +255,72 @@ p#first
     left: 30px;
 
 }
-.but
-{
+.sidebar
+  {
+    display: inline;
+  }
+  .openbtn
+  {
+    display: inline;
+  }
+
+.sidebar {
+    height: 100%;
+    width: 0;
     position: fixed;
-    left: 7px; 
-    display: flex;
-    justify-content:space-between;
-    top:0px;
-    z-index: 1000;
-    background-color: rgba(100, 148, 237, 0.555);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #140303;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
-   
-}
-.bar1
-{
-    text-decoration-line: none;
-    padding: 0.50rem;
-    color: black;
-    background-color: rgba(127, 255, 212, 0.911);
-    border-radius: 10%;
-    margin: 15px;
-}
-.bar2
-{
-    text-decoration-line: none;
-    padding: 0.50rem;
-    color: black;
-    background-color: rgba(127, 255, 212, 0.911);
-    border-radius: 10%;
-    margin: 15px;
-}
-.bar3
-{
-    text-decoration-line: none;
-    padding: 0.50rem;
-    color: black;
-    background-color: rgba(127, 255, 212, 0.911);
-    border-radius: 10%;
-    margin: 15px;
-}
-.bar4
-{
-    text-decoration-line: none;
-    padding: 0.50rem;
-    color: black;
-    background-color: rgba(127, 255, 212, 0.911);
-    border-radius: 10%;
-    margin: 15px;
-
-}
-.bar1:hover, .bar2:hover, .bar3:hover, .bar4:hover
-{
-    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
-    color: rgb(215, 40, 24);
-    background-color: rgba(64, 203, 40, 0.283);
+.sidebar a {
+    padding:50px;
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    color: #cdeace;
+    transition: 0.3s;
+    background-color:none;
     
     
 }
+
+.sidebar a:hover {
+    color: #a72727;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color: #1eb3a776;
+    padding: 1rem;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #b43030;
+}
+
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 10px 10px 0 rgba(195, 45, 45, 0.2);
@@ -410,12 +427,7 @@ p#first
     background-color: rgba(222, 184, 135, 0.338);
     border-radius: 10%;
     
-    
-
   }
-  
-
-   
-   
   }
+
   
