@@ -211,11 +211,12 @@ p#first
   /* On mouse-over, add a deeper shadow */
   
   /* Add some padding inside the card container */
-  .container {
+  .container
+  {
     padding: 5px 5px;
   }
 
-  .card2{
+  .reactjs{
     /* Add shadows to create the "card" effect */
     box-shadow: 10px 10px 0 rgba(195, 45, 45, 0.2);
     transition: 0.3s;
@@ -224,11 +225,11 @@ p#first
     background-color: rgb(172, 186, 186);
     border-radius: 20px;
     position: absolute;
-    top: 700px;
+    top:700px;
     left: 400px;
     
   }
-  .DATABASE
+  .sql
   {
     /* Add shadows to create the "card" effect */
     box-shadow: 10px 10px 0 rgba(195, 45, 45, 0.2);
@@ -238,11 +239,23 @@ p#first
     background-color: rgb(172, 186, 186);
     border-radius: 20px;
     position: absolute;
-    top: 700px;
-    left: 700px;
-    
-    
+    top:4px;
+    left: 300px;
   }
+  .csharp
+  {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 10px 10px 0 rgba(195, 45, 45, 0.2);
+    transition: 0.3s;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(172, 186, 186);
+    border-radius: 20px;
+    position: absolute;
+    top:4px;
+    left: 300px;
+  }
+  
   .kg9
   {
     position: absolute;
@@ -298,7 +311,7 @@ p#first
     z-index: 1;
     top:0px;
     left: 0;
-    background-color: #257a0a75;
+    background-color: #247a0a8f;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -329,18 +342,26 @@ p#first
 
 .sidebar .closebtn {
     position: absolute;
-    top:0;
-    right: 25px;
+    bottom:550px;
+    right: -20px;
     font-size: 36px;
     margin-left: 50px;
     background-color:rgba(25, 160, 209, 0.596);
     padding: 1rem;
     border-radius:5px ;
 }
+#ted
+
+{
+    width: 35px;
+    height: 35px;
+
+}
 
 #main {
     transition: margin-left .5s;
     padding: 16px;
+    
 }
 
 .openbtn {
@@ -350,35 +371,43 @@ p#first
     color: white;
     padding: 10px 15px;
     border: none;
+    
 }
 
 .openbtn:hover {
-    background-color: #b43030;
+    background-color: #b7261e; 
+    visibility: hidden;
 }
 
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 10px 10px 0 rgba(195, 45, 45, 0.2);
     transition: 0.3s;
-    width: 300px;
-    height: 500px;
+    width: 150px;
+    height: 290px;
     background-color: rgb(172, 186, 186);
     border-radius: 20px;
     position: absolute;
     top: 900px;
-    left: 100px; 
+    left:20px; 
   }
-  .card2 {
+  .reactjs {
     /* Add shadows to create the "card" effect */
     box-shadow: 10px 10px 0 rgba(195, 45, 45, 0.2);
     transition: 0.3s;
-    width: 300px;
-    height: 500px;
+    width: 150px;
+    height: 290px;
     background-color: rgb(172, 186, 186);
     border-radius: 20px;
     position: absolute;
-    top:1500px;
-    left: 100px; 
+    top:900px;
+    left: 220px; 
+  }
+  .sql{
+    display: none;
+  }
+  .csharp{
+    display: none;
   }
   .undraw
   {
